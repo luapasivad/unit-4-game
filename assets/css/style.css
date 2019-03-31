@@ -1,0 +1,16 @@
+
+.char {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.char-container {
+    width: 100%;
+    text-align: center;
+}
