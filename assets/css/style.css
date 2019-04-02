@@ -7,10 +7,81 @@
     text-align: center;
     display: inline-block;
     border: 2px solid black;
+}
+
+.char-container, .enemy-container {
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    text-align: center;
+    z-index: 999;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.charWrapperFight {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: fixed;
+    bottom: 125px;
+}
+
+.enemyWrapperFight {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    position: fixed;
+    top: 70px;
+    z-index: 0;
+}
+
+.opponent {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+#userChar {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    border: 2px solid black;
     text-align: center;
 }
 
-.char-container {
+.statBar {
     width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: lightgray;
+}
+
+.enemyStatBar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: lightgray;
+}
+
+.fightBtn {
+    width: 200px;
+    height: 75px;
+}
+
+.btn-wrapper {
     text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 43%;
 }

@@ -13,15 +13,37 @@
 
 <body> 
 
+<div class="container" id="container">
+    <div class="enemyStatBar" id="enemyStatBar">
 
-<div class="char-container">
-    <div class="char" id="jack">jack</div>
-    <div class="char" id="davy">davy</div>
-    <div class="char" id="barb">barb</div>
-    <div class="char" id="swann">elizabeth</div>
+    </div>
+    <div class="char-container">
+        <div class="char" id="jon">jon</div>
+        <div class="char" id="brienne">brienne</div>
+        <div class="char" id="daenerys">daenerys</div>
+        <div class="char" id="khal">khal</div>
+    </div>
+    <div class="enemy-container" id="enemy-container">
+        <div class="char enemy" id="ramsey">ramsey</div>
+        <div class="char enemy" id="cersei">cersei</div>
+        <div class="char enemy" id="melisandre">melisandre</div>
+        <div class="char enemy" id="nightKing">the night king</div>
+    </div>
+    <div class="enemyWrapperFight" id="enemyWrapper">
+
+    </div>
+
+    <div class="btn-wrapper" id="button-wrapper">
+        <button onclick='fight()' id='fightBtn' class='fightBtn' type='button'>fight</button>
+    </div>
+
+    <div class="charWrapperFight" id="charWrapper">
+
+    </div>
+    <div class="statBar" id="statBar">
+
+    </div>
 </div>
-
-    
 <!-- javascript --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="assets/javascript/game.js"></script>
