@@ -93,7 +93,7 @@ function fade() {
     melisandre.fadeOut(1)
     nightKing.fadeOut(1)
     fightBtn.fadeOut(1)
-} 
+}
 function charFadeOut() {
     khal.fadeOut(400)
     brienne.fadeOut(400)
@@ -113,7 +113,6 @@ function enemyFadeOut() {
     nightKing.fadeOut(400)
 }
 function enemyFadeIn() {
-    console.log('boo')
     ramsey.delay(600).fadeIn(800)
     cersei.delay(600).fadeIn(800)
     melisandre.delay(600).fadeIn(800)
@@ -147,7 +146,7 @@ daenerys.click(function(){
 khal.click(function(){
     userChar = "Khal Drogo"
     charStats = character.charK;
-    attackIncrementor = character.charS.att;
+    attackIncrementor = character.charK.att;
     selectCharAnimate()
 })
 //wrapper where the selected character
@@ -243,17 +242,17 @@ function fight() {
             console.log("YOU LOSE")
             gameOverReset()
         } else if (enemyStats.hp <=0) {
-            $('#'+ enemySelected).addClass('hidden')
-            enemyDefeat()    
+            $('#' + enemySelected).addClass('hidden')
+            enemyDefeat()   
         }
     }
 }
 
 function enemyDefeat() {
-    $('#opponent').delay(600).fadeOut(800, function() {
+    $('#opponent').fadeOut(800, function() {
         $('#opponent').remove()
     })
-    fightBtn.delay(600).fadeOut(800)
+    fightBtn.fadeOut(800)
     $('#hpEnemy').html("")
     enemiesDefeated++
         if (enemiesDefeated == 4) {
