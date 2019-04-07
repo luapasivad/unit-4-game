@@ -1,8 +1,20 @@
+body {
+    background-color: white;
+    background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/burnt-parchment-background-high-resolution-3.jpg');
+    background-repeat: none;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
 
 .char {
-    width: 100px;
-    height: 100px;
-    padding: 15px;
+    width: 115px;
+    height: 115px;
+    padding: 3px;
     margin: 15px;
     text-align: center;
     display: inline-block;
@@ -39,9 +51,9 @@
 }
 
 .opponent {
-    width: 100px;
-    height: 100px;
-    padding: 15px;
+    width: 115px;
+    height: 115px;
+    padding: 3px;
     margin: 15px;
     text-align: center;
     display: inline-block;
@@ -49,29 +61,35 @@
 }
 
 #userChar {
-    width: 100px;
-    height: 100px;
-    padding: 15px;
+    width: 115px;
+    height: 115px;
+    padding: 3px;
     margin: 15px;
     display: inline-block;
     border: 2px solid black;
     text-align: center;
+    transition: transform 300ms;
 }
+
 
 .statBar {
     width: 100%;
     height: 50px;
     position: fixed;
+    text-align: right;
     bottom: 0;
-    background-color: lightgray;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/84/Parchment.00.jpg');
+    border-top: 5px solid #65532F
 }
 
 .enemyStatBar {
     width: 100%;
     height: 50px;
     position: fixed;
+    text-align: right;
     top: 0;
-    background-color: lightgray;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/84/Parchment.00.jpg');
+    border-bottom: 5px solid #65532F
 }
 
 .fightBtn {
@@ -84,4 +102,61 @@
     width: 100%;
     position: fixed;
     top: 43%;
+}
+
+#hpEnemy, #hpUser {
+    margin-right: 2%;
+    margin-top: 1%;
+    display: inline-block;
+}
+
+.health-bar, .health-barUser {
+    width: 10px;
+    height: 20px;
+    margin: .25px;
+    margin-top: 13px;
+    background-color: black;
+    display: inline-block;
+}
+
+.health-bar:last-child, .health-barUser:last-child {
+    margin-right: 3%;
+}
+
+.throne {
+    position: fixed;
+    width: 700px;
+    height: 800px;
+    z-index: -1;
+    top: 1%;
+    left: 0%;
+}
+
+.winText {
+    font-size: 35px;
+}
+
+/* animation */
+#slash1 {
+    width: 180px;
+    height: 180px;
+    position: fixed;
+    left: 48%;
+    margin-left: -90px;
+    transition: transform 40ms;
+    opacity: .5;
+    visibility: hidden;
+}
+
+.slashAnimate {
+    visibility: visible !important;
+    transform: translate(90px, -80px)
+}
+
+.attackAnimate {
+    transform: translate(0px, -270%)
+}
+
+.userThrone {
+    transform: translate(0px, -100%)
 }

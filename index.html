@@ -15,33 +15,76 @@
 
 <div class="container" id="container">
     <div class="enemyStatBar" id="enemyStatBar">
-
+        <div id="enemyHealthWrapper" class="hidden">
+            <!-- <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div>
+            <div class="health-bar"></div> -->
+        </div>
     </div>
-    <div class="char-container">
-        <div class="char" id="jon">jon</div>
-        <div class="char" id="brienne">brienne</div>
-        <div class="char" id="daenerys">daenerys</div>
-        <div class="char" id="khal">khal</div>
+    <div id='char-container' class="char-container">
+        <div class="char" id="jon"><img src="assets/images/jon.jpg">jon</div>
+        <div class="char" id="brienne"><img src="assets/images/brienne.jpg">brienne</div>
+        <div class="char" id="daenerys"><img src="assets/images/danaerys.jpg">danaerys</div>
+        <div class="char" id="khal"><img src="assets/images/khal.jpg">khal</div>
     </div>
     <div class="enemy-container" id="enemy-container">
-        <div class="char enemy" id="ramsey">ramsey</div>
-        <div class="char enemy" id="cersei">cersei</div>
-        <div class="char enemy" id="melisandre">melisandre</div>
-        <div class="char enemy" id="nightKing">the night king</div>
+        <div class="char enemy" id="ramsey"><img src="assets/images/ramsay.jpg">ramsey</div>
+        <div class="char enemy" id="cersei"><img src="assets/images/cersei.jpg">cersei</div>
+        <div class="char enemy" id="melisandre"><img src="assets/images/mel.jpg">melisandre</div>
+        <div class="char enemy" id="nightKing"><img src="assets/images/night.jpg">the night king</div>
     </div>
     <div class="enemyWrapperFight" id="enemyWrapper">
-
+        <img id="slash1" src="assets/images/slash1.png" alt="ouch">
     </div>
 
     <div class="btn-wrapper" id="button-wrapper">
-        <button onclick='fight()' id='fightBtn' class='fightBtn' type='button'>fight</button>
+        <button onclick='gameLogic.fight(); animation.attack();' id='fightBtn' class='fightBtn' type='button'>fight</button>
+        <img id="throne" class ="throne" src="/Users/pauldavis/Desktop/unit-4-game/assets/images/kisspng-iron-throne-daenerys-targaryen-sandor-clegane-game-trono-5b14c9e9a3f388.9475612415280890656716.png">
     </div>
 
     <div class="charWrapperFight" id="charWrapper">
 
     </div>
     <div class="statBar" id="statBar">
-
+        <div id="userHealthWrapper" class="hidden">
+            <!-- <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div>
+            <div class="health-barUser"></div> -->
+        </div>
     </div>
 </div>
 <!-- javascript --> 
